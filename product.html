@@ -3,12 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>The BRAND of Luxerious Fasion</title>
+	<title>Product – The BRAND of Luxerious Fasion</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="header center">
+	<header class="header center">
 		<div class="header__left">
 			<a class="logo" href="#"><img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="logo__color">D</span></a>
 			<form class="header__form" action="#">
@@ -26,8 +26,8 @@
 				<img class="button__point" src="img/point_down_wh.png" alt="my account"></a>
 
 		</div>
-	</div>
-	<div class="nav center">
+	</header>
+	<nav class="nav center">
 		<ul class="menu">
 			<li class="menu__list"><a href="#" class="menu__link">Home </a></li>
 			<li class="menu__list"><a href="#" class="menu__link">Man </a></li>
@@ -38,9 +38,109 @@
 			<li class="menu__list"><a href="#" class="menu__link">Hot </a></li>
 			<li class="menu__list"><a href="#" class="menu__link">Deals</a></li>
 		</ul>
+	</nav>
+	
+	<div class="breadcrumb center">
+		<div class="category">New Arrivals</div>
+		<nav>
+			<a href="#" class="breadcrumb__line">Home</a>&nbsp;/&nbsp;<a href="#" class="breadcrumb__line">Men</a>&nbsp;/&nbsp;<span class="breadcrumb__activ">New Arrivals</span>
+		</nav>
 	</div>
-	
-	
+	<div class="main center">
+		<div class="main__left">
+			<details class="leftmenu_block" open>
+				<summary class="leftmenu_cat">Category</summary>
+				<p><a class="leftmenu__item" href="#">Accessories </a></p>
+				<p><a class="leftmenu__item" href="#">Bags </a></p>
+				<p><a class="leftmenu__item" href="#">Denim </a></p>
+				<p><a class="leftmenu__item" href="#">Hoodies & Sweatshirts </a></p>
+				<p><a class="leftmenu__item" href="#">Jackets & Coats </a></p>
+				<p><a class="leftmenu__item" href="#">Pants </a></p>
+				<p><a class="leftmenu__item" href="#">Polos </a></p>
+				<p><a class="leftmenu__item" href="#">Shirts </a></p>
+				<p><a class="leftmenu__item" href="#">Shoes </a></p>
+				<p><a class="leftmenu__item" href="#">Shorts </a></p>
+				<p><a class="leftmenu__item" href="#">Sweaters & Knits </a></p>
+				<p><a class="leftmenu__item" href="#">T-Shirts </a></p>
+				<p><a class="leftmenu__item" href="#">Tanks</a></p>
+			</details>	
+			<details class="leftmenu_block">
+				<summary class="leftmenu_cat">Brand</summary>
+				<p><a class="leftmenu__item" href="#">Mango</a></p>
+				<p><a class="leftmenu__item" href="#">Mango</a></p>
+				<p><a class="leftmenu__item" href="#">Mango</a></p>
+			</details>	
+			<details class="leftmenu_block">
+				<summary class="leftmenu_cat">Designer</summary>
+				<p><a class="leftmenu__item" href="#">Mango</a></p>
+				<p><a class="leftmenu__item" href="#">Mango</a></p>
+				<p><a class="leftmenu__item" href="#">Mango</a></p>
+			</details>
+		</div>
+		
+		<div class="main__right">
+			<div class="top-filter">
+				<div class="top-filter__part">
+					<p class="filter_caption">Trending now</p>
+					<p class="filter_trand">
+						<a href="#">Bohemian</a>
+						&nbsp;|&nbsp;
+						<a href="#"class="trand_activ">Floral</a>
+						&nbsp;|&nbsp;
+						<a href="#">Lace</a>
+					</p>
+					<p class="filter_trand">
+						<a href="#">Floral</a>
+						&nbsp;|&nbsp;
+						<a href="#">Lace</a>
+						&nbsp;|&nbsp;
+						<a href="#">Bohemian</a>
+					</p>
+				</div>
+				<div class="top-filter__part">
+					<p class="filter_caption">Size</p>
+					<div class="sizes">
+                   <input class="checkbox" id="xs" type="checkbox" name="size">
+                   <label for="xs">XXS</label>
+						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">XS</label>
+						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">S</label>
+						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">M</label>
+						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">L</label>
+						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">XL</label>
+						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">XXL</label>
+					</div>
+				</div>
+				<div class="top-filter__part">
+					<p class="filter_caption">pRICE</p>
+					<input class="range" type="range" value="10" step="0.1">
+					<div class="price_range">
+					<div>$52</div>
+					<div>$400</div>
+					</div>
+				</div>
+			</div>
+			<div class="sort">2</div>
+			
+			<div class="product-box">
+				<div class="product">
+					<a href="#" ><img src="img/cat/1.png" class="product__img" alt="item"></a> 
+					<div class="product__content">
+						<a class="product__title" href="#">Mango People T-shirt</a>
+						<p class="product__price">$52.00</p>	
+					</div>
+					<!-- Кнопка Add to cart -->
+					<a href="#" class="add_to_cart">
+						<img src="img/cart_wh.png" class="cart_img" alt="cart">
+						<span class="atc_text">Add to Cart</span>
+					</a>
+				</div>
+			</div>
+			
+			
+			<div class="pages">4</div>
+		</div>
+		
+	</div>
 	
 	<div class="subscribe center">
 	
@@ -78,9 +178,9 @@
 				<p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
 			</div>
 		</div>
-		<div class="footer_right">
+		<nav class="footer_right">
 			<div class="footer-menu">
-				<p class="footer-menu__caption color">COMPANY</p>
+				<h3 class="footer-menu__caption color">COMPANY</h3>
 				<div class="footer-menu__items">
 					<p>Home</p>    
 					<p>Shop</p>
@@ -90,7 +190,7 @@
 				</div>
 			</div>
 			<div class="footer-menu">
-				<p class="footer-menu__caption color">INFORMATION</p>
+				<h3 class="footer-menu__caption color">INFORMATION</h3>
 				<div class="footer-menu__items">
 					<p>Tearms & Condition</p>        
 					<p>Privacy Policy</p>
@@ -100,7 +200,7 @@
 				</div>
 			</div>
 			<div class="footer-menu">
-				<p class="footer-menu__caption color">SHOP CATEGORY</p>
+				<h3 class="footer-menu__caption color">SHOP CATEGORY</h3>
 				<div class="footer-menu__items">
 					<p>Men</p>        
 					<p>Women</p>
@@ -109,7 +209,7 @@
 					<p>Browse All</p>
 				</div>
 			</div>
-		</div>
+		</nav>
 	</div>
 	<div class="copyright center">
 		<div class="copyright-text">© 2017 Brand All Rights Reserved.</div>
@@ -131,9 +231,6 @@
 			</div>
 		</div>
 	</div>
-	
-	
-	
 
 </body>
 </html>
