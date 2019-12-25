@@ -6,6 +6,7 @@
 	<title>Product – The BRAND of Luxerious Fasion</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/d026af0d1d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -50,21 +51,21 @@
 		</nav>
 	</div>
 	<div class="main center">
-		<div class="main__left">
+		<aside class="main__left">
 			<details class="leftmenu_block" open>
 				<summary class="leftmenu_cat">Category</summary>
-				<p><a class="leftmenu__item" href="#">Accessories </a></p>
-				<p><a class="leftmenu__item" href="#">Bags </a></p>
-				<p><a class="leftmenu__item" href="#">Denim </a></p>
-				<p><a class="leftmenu__item" href="#">Hoodies & Sweatshirts </a></p>
-				<p><a class="leftmenu__item" href="#">Jackets & Coats </a></p>
-				<p><a class="leftmenu__item" href="#">Pants </a></p>
-				<p><a class="leftmenu__item" href="#">Polos </a></p>
-				<p><a class="leftmenu__item" href="#">Shirts </a></p>
-				<p><a class="leftmenu__item" href="#">Shoes </a></p>
-				<p><a class="leftmenu__item" href="#">Shorts </a></p>
-				<p><a class="leftmenu__item" href="#">Sweaters & Knits </a></p>
-				<p><a class="leftmenu__item" href="#">T-Shirts </a></p>
+				<p><a class="leftmenu__item" href="#">Accessories</a></p>
+				<p><a class="leftmenu__item" href="#">Bags</a></p>
+				<p><a class="leftmenu__item" href="#">Denim</a></p>
+				<p><a class="leftmenu__item" href="#">Hoodies & Sweatshirts</a></p>
+				<p><a class="leftmenu__item" href="#">Jackets & Coats</a></p>
+				<p><a class="leftmenu__item" href="#">Pants</a></p>
+				<p><a class="leftmenu__item" href="#">Polos</a></p>
+				<p><a class="leftmenu__item" href="#">Shirts</a></p>
+				<p><a class="leftmenu__item" href="#">Shoes</a></p>
+				<p><a class="leftmenu__item" href="#">Shorts</a></p>
+				<p><a class="leftmenu__item" href="#">Sweaters & Knits</a></p>
+				<p><a class="leftmenu__item" href="#">T-Shirts</a></p>
 				<p><a class="leftmenu__item" href="#">Tanks</a></p>
 			</details>
 			<details class="leftmenu_block">
@@ -79,8 +80,7 @@
 				<p><a class="leftmenu__item" href="#">Mango</a></p>
 				<p><a class="leftmenu__item" href="#">Mango</a></p>
 			</details>
-		</div>
-
+		</aside>
 		<div class="main__right">
 			<div class="top-filter">
 				<div class="top-filter__part">
@@ -103,14 +103,13 @@
 				<div class="top-filter__part">
 					<p class="filter_caption">Size</p>
 					<div class="sizes">
-						<input class="checkbox" id="xs" type="checkbox" name="size">
-						<label for="xs">XXS</label>
+						<input class="checkbox" id="xxs" type="checkbox" name="size"><label for="xxs">XXS</label>
 						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">XS</label>
-						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">S</label>
-						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">M</label>
-						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">L</label>
-						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">XL</label>
-						<input class="checkbox" id="xs" type="checkbox" name="size"><label for="xs">XXL</label>
+						<input class="checkbox" id="s" type="checkbox" name="size"><label for="s">S</label>
+						<input class="checkbox" id="m" type="checkbox" name="size"><label for="m">M</label>
+						<input class="checkbox" id="l" type="checkbox" name="size"><label for="l">L</label>
+						<input class="checkbox" id="xl" type="checkbox" name="size"><label for="xl">XL</label>
+						<input class="checkbox" id="xxl" type="checkbox" name="size"><label for="xxl">XXL</label>
 					</div>
 				</div>
 				<div class="top-filter__part">
@@ -122,28 +121,184 @@
 					</div>
 				</div>
 			</div>
-			<div class="sort">2</div>
-
-			<div class="product-box">
-				<div class="product">
-					<a href="#"><img src="img/cat/1.png" class="product__img" alt="item"></a>
-					<div class="product__content">
-						<a class="product__title" href="#">Mango People T-shirt</a>
-						<p class="product__price">$52.00</p>
+			<div class="sort">
+				<div class="sort_item">
+					<div class="sort_label">Sort By</div>
+					<div class="sort_box">Name
+						<img class="sort__point" src="img/point_down.png">
 					</div>
-					<!-- Кнопка Add to cart -->
-					<a href="#" class="add_to_cart">
-						<img src="img/cart_wh.png" class="cart_img" alt="cart">
-						<span class="atc_text">Add to Cart</span>
-					</a>
 				</div>
+				<div class="sort_item">
+					<div class="sort_label">Show</div>
+					<div class="sort_box">09
+						<img class="sort__point" src="img/point_down.png">
+					</div>
+				</div>				
 			</div>
+			<section class="product-box product_align center">	
 
-
-			<div class="pages">4</div>
+		<div class="product pr_align">
+			<a href="#" >
+				<img src="img/cat/1.png" class="product__img" alt="item">
+			</a>
+			<div class="product__content">
+				<a class="product__title" href="#">Mango People T-shirt</a>
+				<p class="product__price">$52.00</p>	
+			</div>
+			<!-- Кнопка Add to cart -->
+			<a href="#" class="add_to_cart">
+				<img src="img/cart_wh.png" class="cart_img" alt="cart">
+				<span class="atc_text">Add to Cart</span>
+			</a>
 		</div>
+		
+		<div class="product">
+			<a href="#" >
+				<img src="img/cat/2.png" class="product__img" alt="item">
+			</a>
+			<div class="product__content">
+				<a class="product__title" href="#">Mango People T-shirt</a>
+				<p class="product__price">$52.00</p>	
+			</div>
+			<!-- Кнопка Add to cart -->
+			<a href="#" class="add_to_cart">
+				<img src="img/cart_wh.png" class="cart_img" alt="cart">
+				<span class="atc_text">Add to Cart</span>
+			</a>
+		</div>
+		
+		<div class="product">
+			<a href="#" >
+				<img src="img/cat/3.png" class="product__img" alt="item">
+			</a>
+			<div class="product__content">
+				<a class="product__title" href="#">Mango People T-shirt</a>
+				<p class="product__price">$52.00</p>	
+			</div>
+			<!-- Кнопка Add to cart -->
+			<a href="#" class="add_to_cart">
+				<img src="img/cart_wh.png" class="cart_img" alt="cart">
+				<span class="atc_text">Add to Cart</span>
+			</a>
+		</div>
+		
+		<div class="product">
+			<a href="#" >
+				<img src="img/cat/4.png" class="product__img" alt="item">
+			</a>
+			<div class="product__content">
+				<a class="product__title" href="#">Mango People T-shirt</a>
+				<p class="product__price">$52.00</p>	
+			</div>
+			<!-- Кнопка Add to cart -->
+			<a href="#" class="add_to_cart">
+				<img src="img/cart_wh.png" class="cart_img" alt="cart">
+				<span class="atc_text">Add to Cart</span>
+			</a>
+		</div>
+		
+		<div class="product">
+			<a href="#" >
+				<img src="img/cat/5.png" class="product__img" alt="item">
+			</a>
+			<div class="product__content">
+				<a class="product__title" href="#">Mango People T-shirt</a>
+				<p class="product__price">$52.00</p>	
+			</div>
+			<!-- Кнопка Add to cart -->
+			<a href="#" class="add_to_cart">
+				<img src="img/cart_wh.png" class="cart_img" alt="cart">
+				<span class="atc_text">Add to Cart</span>
+			</a>
+		</div>
+		
+		<div class="product">
+			<a href="#" >
+				<img src="img/cat/6.png" class="product__img" alt="item">
+			</a>
+			<div class="product__content">
+				<a class="product__title" href="#">Mango People T-shirt</a>
+				<p class="product__price">$52.00</p>	
+			</div>
+			<!-- Кнопка Add to cart -->
+			<a href="#" class="add_to_cart">
+				<img src="img/cart_wh.png" class="cart_img" alt="cart">
+				<span class="atc_text">Add to Cart</span>
+			</a>
+		</div>
+		
+		<div class="product">
+			<a href="#" >
+				<img src="img/cat/7.png" class="product__img" alt="item">
+			</a>
+			<div class="product__content">
+				<a class="product__title" href="#">Mango People T-shirt</a>
+				<p class="product__price">$52.00</p>	
+			</div>
+			<!-- Кнопка Add to cart -->
+			<a href="#" class="add_to_cart">
+				<img src="img/cart_wh.png" class="cart_img" alt="cart">
+				<span class="atc_text">Add to Cart</span>
+			</a>
+		</div>
+		
+		<div class="product">
+			<a href="#" >
+				<img src="img/cat/8.png" class="product__img" alt="item">
+			</a>
+			<div class="product__content">
+				<a class="product__title" href="#">Mango People T-shirt</a>
+				<p class="product__price">$52.00</p>	
+			</div>
+			<!-- Кнопка Add to cart -->
+			<a href="#" class="add_to_cart">
+				<img src="img/cart_wh.png" class="cart_img" alt="cart">
+				<span class="atc_text">Add to Cart</span>
+			</a>
+		</div>		
+		
+	</section>
 
+			<div class="paging">
+				<div class="pages">
+					<span class="number"><i class="fas fa-angle-left"></i></span>
+					<span class="number color">1</span>
+					<a href="#" class="number">2</a>
+					<a href="#" class="number">3</a>
+					<a href="#" class="number">4</a>
+					<a href="#" class="number">5</a>
+					<a href="#" class="number">6</a>
+					<span class="number">.....</span>
+					<a href="#" class="number">20</a>
+					<a href="#" class="number"><i class="fas fa-angle-right"></i></a>
+				</div>
+				<button class="viewall">View All</button>
+			</div>
+		</div>
 	</div>
+	<section class="bottom_discount center">
+		<article class="discount_article">
+			<img src="img/discount1.png" alt="">
+			<div class="article_text">
+				<a href="#"><h3 class="desc__title">Free Delivery</h3></a>
+				<a href="#" class="desc__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</a>
+			</div>
+		</article>
+		<article class="discount_article">
+			<img src="img/discount2.png" alt="">
+			<div class="article_text">
+				<a href="#"><h3 class="desc__title">Sales & discounts</h3></a>
+				<a href="#" class="desc__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</a>
+			</div>
+		</article>
+		<article class="discount_article">
+			<img src="img/discount3.png" alt="">
+			<div class="article_text">
+				<a href="#"><h3 class="desc__title">Quality assurance</h3></a>
+				<a href="#" class="desc__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</a>
+			</div>
+		</article>
+	</section>
 
 	<!-- Подвал -->
 	<div class="subscribe center">
@@ -167,7 +322,7 @@
 				<p class="cta__2">FOR OUR NEWsLETTER AND PROMOTION</p>
 			</div>
 			<form class="subscribe__form" action="#">
-				<input class="subscribe__input" type="text" placeholder="Enter Your Email">
+				<input class="subscribe__input" type="email" placeholder="Enter Your Email">
 				<button class="subscribe__button">Subscribe</button>
 			</form>
 		</div>
