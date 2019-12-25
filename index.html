@@ -7,15 +7,41 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<!-- Шапка -->
+	<!-- Шапка -->
 	<header class="header center">
 		<div class="header__left">
 			<a class="logo" href="#"><img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="logo__color">D</span></a>
 			<form class="header__form" action="#">
 				<div class="browse">
-					<span class="browse__text">Browse</span>
+					<a href="#"class="browse__text">Browse</a>
 					<img class="browse__point" src="img/point_down.png">
+					<div class="drop browse_drop">
+						<div class="drop__chapter">
+							<h3 class="drop__h3">Women</h3>
+							<ul class="drop__ul">
+								<li><a href="#" class="drop__link">Dresses </a></li>
+								<li><a href="#" class="drop__link">Tops </a></li>
+								<li><a href="#" class="drop__link">Sweaters/Knits </a></li>
+								<li><a href="#" class="drop__link">Jackets/Coats </a></li>
+								<li><a href="#" class="drop__link">Blazers Denim </a></li>
+								<li><a href="#" class="drop__link">Leggings/Pants </a></li>
+								<li><a href="#" class="drop__link">Skirts/Shorts </a></li>
+								<li><a href="#" class="drop__link">Accessories</a></li>
+							</ul>
+							<h3 class="drop__h3">Men</h3>
+							<ul class="drop__ul">    Jackets/vests
+								<li><a href="#" class="drop__link">Tees/Tank tops</a></li>
+								<li><a href="#" class="drop__link">Shirts/Polos</a></li>
+								<li><a href="#" class="drop__link">Sweaters</a></li>
+								<li><a href="#" class="drop__link">Sweatshirts/Hoodies</a></li>
+								<li><a href="#" class="drop__link">Blazers</a></li>
+								<li><a href="#" class="drop__link">Jackets/vests</a></li>		
+							</ul>
+						</div>
+				</div>
+			
 				</div>
 				<input class="header__input" type="text" placeholder="Search for Item...">
 				<button class="header__search"><img src="img/search.png" alt="search"></button>
@@ -31,28 +57,52 @@
 	<nav class="nav center">
 		<ul class="menu">
 			<li class="menu__list"><a href="#" class="menu__link">Home </a>
+				<!--    DROPDOWN MENU  -->
 				<div class="drop">
-                    <div class="drop__chapter">
-                        <h3 class="drop__h3">Women</h3>
+					<div class="drop__chapter">
+						<h3 class="drop__h3">Women</h3>
+						<ul class="drop__ul">
+							<li><a href="#" class="drop__link">Dresses </a></li>
+							<li><a href="#" class="drop__link">Tops </a></li>
+							<li><a href="#" class="drop__link">Sweaters/Knits </a></li>
+							<li><a href="#" class="drop__link">Jackets/Coats </a></li>
+							<li><a href="#" class="drop__link">Blazers Denim </a></li>
+							<li><a href="#" class="drop__link">Leggings/Pants </a></li>
+							<li><a href="#" class="drop__link">Skirts/Shorts </a></li>
+							<li><a href="#" class="drop__link">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="drop__chapter">
+						<h3 class="drop__h3">Women</h3>
+						<ul class="drop__ul">
+							<li><a href="#" class="drop__link">Dresses </a></li>
+							<li><a href="#" class="drop__link">Tops </a></li>
+							<li><a href="#" class="drop__link">Sweaters/Knits </a></li>
+						</ul>
+						<h3 class="drop__h3">Women</h3>
+						<ul class="drop__ul">
+							<li><a href="#" class="drop__link">Dresses </a></li>
+							<li><a href="#" class="drop__link">Tops </a></li>
+							<li><a href="#" class="drop__link">Sweaters/Knits </a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="menu__list"><a href="#" class="menu__link">Man </a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Women </a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Kids </a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Accoseriese </a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Featured </a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Hot Deals</a>
+				<div class="drop drop_last">
+                  	<div class="drop__chapter">
+                    	<h3 class="drop__h3">Accessori</h3>
                         <ul class="drop__ul">
                             <li><a href="#" class="drop__link">Dresses </a></li>
                             <li><a href="#" class="drop__link">Tops </a></li>
                             <li><a href="#" class="drop__link">Sweaters/Knits </a></li>
-                            <li><a href="#" class="drop__link">Jackets/Coats </a></li>
-                            <li><a href="#" class="drop__link">Blazers Denim </a></li>
-                            <li><a href="#" class="drop__link">Leggings/Pants </a></li>
-                            <li><a href="#" class="drop__link">Skirts/Shorts </a></li>
-                            <li><a href="#" class="drop__link">Accessories</a></li>
                         </ul>
-                    </div>
-                    <div class="drop__chapter">
-                        <h3 class="drop__h3">Women</h3>
-                        <ul class="drop__ul">
-                            <li><a href="#" class="drop__link">Dresses </a></li>
-                            <li><a href="#" class="drop__link">Tops </a></li>
-                            <li><a href="#" class="drop__link">Sweaters/Knits </a></li>
-                        </ul>
-                        <h3 class="drop__h3">Women</h3>
+                        <h3 class="drop__h3">Accessori</h3>
                         <ul class="drop__ul">
                             <li><a href="#" class="drop__link">Dresses </a></li>
                             <li><a href="#" class="drop__link">Tops </a></li>
@@ -60,18 +110,10 @@
                         </ul>
                     </div>
                 </div>
-            </li>
-			<li class="menu__list"><a href="#" class="menu__link">Man </a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Women </a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Kids </a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Accoseriese </a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Featured </a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Hot Deals</a>
-<!--			drop_last-->
 			</li>
 		</ul>
 	</nav>
-<!-- /Шапка -->
+	<!-- /Шапка -->
 
 	<div class="promo center">
 		<div class="promo__content">
@@ -107,170 +149,176 @@
 		</a>
 	</section>
 	<section>
-	<div class="title center">
-		<h4 class="title__h4">Fetured Items</h4>
-		<p class="subtitle">Shop for items based on what we featured in this week</p>
-	</div>
-	<div class="product-box center">	
-		<div class="product">
-			<a href="#" >
-				<img src="img/cat/1.png" class="product__img" alt="item">
-			</a>
-			<div class="product__content">
-				<a class="product__title" href="#">Mango People T-shirt</a>
-				<p class="product__price">$52.00</p>	
-			</div>
-			<!-- Кнопка Add to cart -->
-			<a href="#" class="add_to_cart">
-				<img src="img/cart_wh.png" class="cart_img" alt="cart">
-				<span class="atc_text">Add to Cart</span>
-			</a>
+		<div class="title center">
+			<h4 class="title__h4">Fetured Items</h4>
+			<p class="subtitle">Shop for items based on what we featured in this week</p>
 		</div>
-		<div class="product">
-			<a href="#" >
-				<img src="img/cat/2.png" class="product__img" alt="item">
-			</a>
-			<div class="product__content">
-				<a class="product__title" href="#">Mango People T-shirt</a>
-				<p class="product__price">$52.00</p>	
+		<div class="product-box center">
+			<div class="product">
+				<a href="#">
+					<img src="img/cat/1.png" class="product__img" alt="item">
+				</a>
+				<div class="product__content">
+					<a class="product__title" href="#">Mango People T-shirt</a>
+					<p class="product__price">$52.00</p>
+				</div>
+				<!-- Кнопка Add to cart -->
+				<a href="#" class="add_to_cart">
+					<img src="img/cart_wh.png" class="cart_img" alt="cart">
+					<span class="atc_text">Add to Cart</span>
+				</a>
 			</div>
-			<!-- Кнопка Add to cart -->
-			<a href="#" class="add_to_cart">
-				<img src="img/cart_wh.png" class="cart_img" alt="cart">
-				<span class="atc_text">Add to Cart</span>
-			</a>
+			<div class="product">
+				<a href="#">
+					<img src="img/cat/2.png" class="product__img" alt="item">
+				</a>
+				<div class="product__content">
+					<a class="product__title" href="#">Mango People T-shirt</a>
+					<p class="product__price">$52.00</p>
+				</div>
+				<!-- Кнопка Add to cart -->
+				<a href="#" class="add_to_cart">
+					<img src="img/cart_wh.png" class="cart_img" alt="cart">
+					<span class="atc_text">Add to Cart</span>
+				</a>
+			</div>
+			<div class="product">
+				<a href="#">
+					<img src="img/cat/3.png" class="product__img" alt="item">
+				</a>
+				<div class="product__content">
+					<a class="product__title" href="#">Mango People T-shirt</a>
+					<p class="product__price">$52.00</p>
+				</div>
+				<!-- Кнопка Add to cart -->
+				<a href="#" class="add_to_cart">
+					<img src="img/cart_wh.png" class="cart_img" alt="cart">
+					<span class="atc_text">Add to Cart</span>
+				</a>
+			</div>
+			<div class="product">
+				<a href="#">
+					<img src="img/cat/4.png" class="product__img" alt="item">
+				</a>
+				<div class="product__content">
+					<a class="product__title" href="#">Mango People T-shirt</a>
+					<p class="product__price">$52.00</p>
+				</div>
+				<!-- Кнопка Add to cart -->
+				<a href="#" class="add_to_cart">
+					<img src="img/cart_wh.png" class="cart_img" alt="cart">
+					<span class="atc_text">Add to Cart</span>
+				</a>
+			</div>
+			<div class="product">
+				<a href="#">
+					<img src="img/cat/5.png" class="product__img" alt="item">
+				</a>
+				<div class="product__content">
+					<a class="product__title" href="#">Mango People T-shirt</a>
+					<p class="product__price">$52.00</p>
+				</div>
+				<!-- Кнопка Add to cart -->
+				<a href="#" class="add_to_cart">
+					<img src="img/cart_wh.png" class="cart_img" alt="cart">
+					<span class="atc_text">Add to Cart</span>
+				</a>
+			</div>
+			<div class="product">
+				<a href="#">
+					<img src="img/cat/6.png" class="product__img" alt="item">
+				</a>
+				<div class="product__content">
+					<a class="product__title" href="#">Mango People T-shirt</a>
+					<p class="product__price">$52.00</p>
+				</div>
+				<!-- Кнопка Add to cart -->
+				<a href="#" class="add_to_cart">
+					<img src="img/cart_wh.png" class="cart_img" alt="cart">
+					<span class="atc_text">Add to Cart</span>
+				</a>
+			</div>
+			<div class="product">
+				<a href="#">
+					<img src="img/cat/7.png" class="product__img" alt="item">
+				</a>
+				<div class="product__content">
+					<a class="product__title" href="#">Mango People T-shirt</a>
+					<p class="product__price">$52.00</p>
+				</div>
+				<!-- Кнопка Add to cart -->
+				<a href="#" class="add_to_cart">
+					<img src="img/cart_wh.png" class="cart_img" alt="cart">
+					<span class="atc_text">Add to Cart</span>
+				</a>
+			</div>
+			<div class="product">
+				<a href="#">
+					<img src="img/cat/8.png" class="product__img" alt="item">
+				</a>
+				<div class="product__content">
+					<a class="product__title" href="#">Mango People T-shirt</a>
+					<p class="product__price">$52.00</p>
+				</div>
+				<!-- Кнопка Add to cart -->
+				<a href="#" class="add_to_cart">
+					<img src="img/cart_wh.png" class="cart_img" alt="cart">
+					<span class="atc_text">Add to Cart</span>
+				</a>
+			</div>
 		</div>
-		<div class="product">
-			<a href="#" >
-				<img src="img/cat/3.png" class="product__img" alt="item">
-			</a>
-			<div class="product__content">
-				<a class="product__title" href="#">Mango People T-shirt</a>
-				<p class="product__price">$52.00</p>	
-			</div>
-			<!-- Кнопка Add to cart -->
-			<a href="#" class="add_to_cart">
-				<img src="img/cart_wh.png" class="cart_img" alt="cart">
-				<span class="atc_text">Add to Cart</span>
-			</a>
-		</div>
-		<div class="product">
-			<a href="#" >
-				<img src="img/cat/4.png" class="product__img" alt="item">
-			</a>
-			<div class="product__content">
-				<a class="product__title" href="#">Mango People T-shirt</a>
-				<p class="product__price">$52.00</p>	
-			</div>
-			<!-- Кнопка Add to cart -->
-			<a href="#" class="add_to_cart">
-				<img src="img/cart_wh.png" class="cart_img" alt="cart">
-				<span class="atc_text">Add to Cart</span>
-			</a>
-		</div>
-		<div class="product">
-			<a href="#" >
-				<img src="img/cat/5.png" class="product__img" alt="item">
-			</a>
-			<div class="product__content">
-				<a class="product__title" href="#">Mango People T-shirt</a>
-				<p class="product__price">$52.00</p>	
-			</div>
-			<!-- Кнопка Add to cart -->
-			<a href="#" class="add_to_cart">
-				<img src="img/cart_wh.png" class="cart_img" alt="cart">
-				<span class="atc_text">Add to Cart</span>
-			</a>
-		</div>
-		<div class="product">
-			<a href="#" >
-				<img src="img/cat/6.png" class="product__img" alt="item">
-			</a>
-			<div class="product__content">
-				<a class="product__title" href="#">Mango People T-shirt</a>
-				<p class="product__price">$52.00</p>	
-			</div>
-			<!-- Кнопка Add to cart -->
-			<a href="#" class="add_to_cart">
-				<img src="img/cart_wh.png" class="cart_img" alt="cart">
-				<span class="atc_text">Add to Cart</span>
-			</a>
-		</div>
-		<div class="product">
-			<a href="#" >
-				<img src="img/cat/7.png" class="product__img" alt="item">
-			</a>
-			<div class="product__content">
-				<a class="product__title" href="#">Mango People T-shirt</a>
-				<p class="product__price">$52.00</p>	
-			</div>
-			<!-- Кнопка Add to cart -->
-			<a href="#" class="add_to_cart">
-				<img src="img/cart_wh.png" class="cart_img" alt="cart">
-				<span class="atc_text">Add to Cart</span>
-			</a>
-		</div>
-		<div class="product">
-			<a href="#" >
-				<img src="img/cat/8.png" class="product__img" alt="item">
-			</a>
-			<div class="product__content">
-				<a class="product__title" href="#">Mango People T-shirt</a>
-				<p class="product__price">$52.00</p>	
-			</div>
-			<!-- Кнопка Add to cart -->
-			<a href="#" class="add_to_cart">
-				<img src="img/cart_wh.png" class="cart_img" alt="cart">
-				<span class="atc_text">Add to Cart</span>
-			</a>
-		</div>		
-	</div>
-	<div class="action center">
-		<a href="#" class="action__button"><span class="action_button__text">Browse All Product</span>
-			<img class="action_button__point" src="img/arrow_right.png" alt="my account"></a>
+		<div class="action center">
+			<a href="#" class="action__button"><span class="action_button__text">Browse All Product</span>
+				<img class="action_button__point" src="img/arrow_right.png" alt="my account"></a>
 
-	</div>
+		</div>
 	</section>
 
 	<section class="special center">
 		<div class="special__img">
-		<a href="#">
-		<div class="special_title">
-			<p class="special_p1">30% <span class="color">OFFER</span></p>
-			<p class="special_p2">FOR WOMEN</p>
+			<a href="#">
+				<div class="special_title">
+					<p class="special_p1">30% <span class="color">OFFER</span></p>
+					<p class="special_p2">FOR WOMEN</p>
+				</div>
+				<img src="img/discount.png" alt="discount">
+			</a>
 		</div>
-		<img src="img/discount.png" alt="discount">
-		</a>
-		</div>
-		
+
 		<div class="special__desc">
 			<article class="desc__item">
 				<div class="decs_img_box"><img src="img/discount1.png" alt="" class="desc__img"></div>
 				<div class="desc_content">
-				<a href="#"><p class="desc__title">Free Delivery</p></a>
-				<a href="#" class="desc__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</a>
+					<a href="#">
+						<p class="desc__title">Free Delivery</p>
+					</a>
+					<a href="#" class="desc__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</a>
 				</div>
 			</article>
 			<article class="desc__item">
 				<div class="decs_img_box"><img src="img/discount2.png" alt="" class="desc__img"></div>
 				<div class="desc_content">
-				<a href="#"><p class="desc__title">Sales & discounts</p></a>
-				<a href="#" class="desc__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</a>
+					<a href="#">
+						<p class="desc__title">Sales & discounts</p>
+					</a>
+					<a href="#" class="desc__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</a>
 				</div>
 			</article>
 			<article class="desc__item">
 				<div class="decs_img_box"><img src="img/discount3.png" alt="" class="desc__img"></div>
 				<div class="desc_content">
-				<a href="#"><p class="desc__title">Quality assurance</p></a>
-				<a href="#" class="desc__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</a>
+					<a href="#">
+						<p class="desc__title">Quality assurance</p>
+					</a>
+					<a href="#" class="desc__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</a>
 				</div>
 			</article>
 		</div>
-		
+
 	</section>
-<!-- Подвал -->
+	<!-- Подвал -->
 	<div class="subscribe center">
-	
+
 		<div class="subscribe_left">
 			<img src="img/feedback.png" alt="" class="feedback__img">
 			<div class="feedback">
@@ -282,19 +330,19 @@
 					<a class="feedback-switch fb_activ" href="#"></a>
 				</div>
 			</div>
-			
+
 		</div>
 		<div class="subscribe_right">
 			<div class="cta">
 				<p class="cta__1">Subscribe</p>
-				<p class="cta__2">FOR OUR NEWsLETTER AND PROMOTION</p>	
+				<p class="cta__2">FOR OUR NEWsLETTER AND PROMOTION</p>
 			</div>
 			<form class="subscribe__form" action="#">
 				<input class="subscribe__input" type="email" placeholder="Enter Your Email">
 				<button class="subscribe__button">Subscribe</button>
 			</form>
 		</div>
-		
+
 	</div>
 	<footer class="footer center">
 		<div class="footer_left">
@@ -309,31 +357,31 @@
 			<div class="footer-menu">
 				<h3 class="footer-menu__caption color">COMPANY</h3>
 				<div class="footer-menu__items">
-					<p>Home</p>
-					<p>Shop</p>
-					<p>About</p>
-					<p>How It Works</p>
-					<p>Contact</p>
+					<a href="#">Home</a>
+					<a href="#">Shop</a>
+					<a href="#">About</a>
+					<a href="#">How It Works</a>
+					<a href="#">Contact</a>
 				</div>
 			</div>
 			<div class="footer-menu">
 				<h3 class="footer-menu__caption color">INFORMATION</h3>
 				<div class="footer-menu__items">
-					<p>Tearms & Condition</p>
-					<p>Privacy Policy</p>
-					<p>How to Buy</p>
-					<p>How to Sell</p>
-					<p>Promotion</p>
+					<a href="#">Tearms & Condition</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">How to Buy</a>
+					<a href="#">How to Sell</a>
+					<a href="#">Promotion</a>
 				</div>
 			</div>
 			<div class="footer-menu">
 				<h3 class="footer-menu__caption color">SHOP CATEGORY</h3>
 				<div class="footer-menu__items">
-					<p>Men</p>
-					<p>Women</p>
-					<p>Child</p>
-					<p>Apparel</p>
-					<p>Browse All</p>
+					<a href="#">Men</a>
+					<a href="#">Women</a>
+					<a href="#">Child</a>
+					<a href="#">Apparel</a>
+					<a href="#">Browse All</a>
 				</div>
 			</div>
 		</nav>
@@ -358,6 +406,7 @@
 			</div>
 		</div>
 	</footer>
-<!-- /Подвал -->
+	<!-- /Подвал -->
 </body>
+
 </html>

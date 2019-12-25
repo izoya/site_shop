@@ -78,6 +78,12 @@ a {
 	border-width: 1px 0px 1px 1px;
 	border-radius: 3px 0px 0px 3px;
 	background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+	position:relative;
+	
+}
+
+.browse:hover .drop {
+	display: flex;
 }
 
 .browse__point {
@@ -133,6 +139,7 @@ input:-moz-placeholder {
 	border: solid #e6e6e6;
 	border-width: 1px 1px 1px 0px;
 	border-radius: 0px 3px 3px 0px;
+	cursor: pointer;
 }
 
 .button {
@@ -363,6 +370,7 @@ input:-moz-placeholder {
 	align-items: center;
 	justify-content: flex-start;
 }
+
 .add_to_cart:hover {
 	box-shadow: 0 0 5px #fff;
 }
@@ -684,11 +692,18 @@ input:-moz-placeholder {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 179px;
+
+}
+.footer-menu__items a{
 	font-size: 16px;
 	color: #898989;
 	text-align: left;
 	letter-spacing: 0.03em;
 }
+.footer-menu__items a:hover{
+	color:#f16d7f;
+}
+
 
 .footer-menu {
 	display: flex;
@@ -743,6 +758,13 @@ input:-moz-placeholder {
 
 .menu__list:hover {
 	border-bottom: 3px solid #f16d7f;
+}
+
+.menu__list:hover .drop {
+	display: flex;
+}
+.drop_last {
+   right: 0; 
 }
 
 .feedback-switch {
@@ -813,19 +835,23 @@ input:-moz-placeholder {
 	line-height: 33px;
 	padding-left: 17px;
 }
+.leftmenu__item:hover {
+	color: #f16d7f;
+}
 
 .leftmenu_cat {
-    font-size: 14px;
-    font-weight: bold;
-    color: #6f6e6e;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    border-left: 5px solid #f16d7f;
-    padding-top: 12px;
-    padding-bottom: 15px;
-    padding-left: 11px;
-    width: 243px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #6f6e6e;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+	border-left: 5px solid #f16d7f;
+	padding-top: 12px;
+	padding-bottom: 15px;
+	padding-left: 11px;
+	width: 243px;
+	cursor: pointer;
 }
 
 
@@ -845,7 +871,8 @@ details[open] > summary::after {
 	content: '\25BC';
 	color: #ef5b70;
 }
-details[open] > summary{
+
+details[open] > summary {
 	color: #ef5b70;
 }
 
@@ -869,6 +896,10 @@ details[open] > summary{
 	font-size: 14px;
 	color: #dfdfdf;
 	line-height: 26px;
+}
+.filter_trand a:hover {
+	cursor: pointer;
+	color: #f16d7f;
 }
 
 color: #6f6e6e;
@@ -913,6 +944,10 @@ color: #6f6e6e;
 	padding-right: 23px;
 	cursor: pointer;
 }
+.checkbox + label:hover {
+	color: #f16d7f;
+}
+
 
 .checkbox + label:before {
 	content: '';
@@ -985,9 +1020,15 @@ color: #6f6e6e;
 	border: 1px solid #ebebeb;
 }
 
+
+
 .sort_box {
 	padding-left: 11px;
 	border-left: 1px solid #ebebeb;
+}
+.sort_box:hover{
+	cursor: pointer;
+	color: #f16d7f;
 }
 
 .sort_label {
@@ -1052,8 +1093,8 @@ a.number:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding-top:89px;
-	padding-bottom:89px;
+	padding-top: 89px;
+	padding-bottom: 89px;
 }
 
 .discount_article {
@@ -1063,6 +1104,7 @@ a.number:hover {
 	align-items: center;
 	max-width: 333px;
 }
+
 .discount_article img {
 	max-height: 40px;
 	max-width: 47px;
@@ -1077,22 +1119,68 @@ a.number:hover {
 }
 
 .product_align {
-    justify-content: flex-start !important;
-    margin-right: -35px;
+	justify-content: flex-start !important;
+	margin-right: -35px;
 }
 
 .pr_align {
-	    margin-right: 30px;
+	margin-right: 30px;
 }
 
 .drop {
 	background-color: #ffffff;
-    border-radius: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 8px;
-/*    display: none;*/
-    position: absolute;
-    top: 46px;
-    border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 8px;
+	display: none;
+	position: absolute;
+	top: 46px;
+	border: 1px solid #e8e8e8;
+}
+
+.menu__list {
+	position: relative;
+}
+
+.drop__chapter {
+	width: 234px;
+	margin-right: 46px;
+}
+
+.drop__chapter:last-of-type {
+	margin-right: 0;
+}
+
+.drop__h3 {
+	font-size: 14px;
+	color: #232323;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e8e8e8;
+	padding-bottom: 8px;
+	margin-top: 21px;
+}
+
+
+.drop__ul {
+    list-style-type: none;
+}
+
+
+.drop__link {
+    font-size: 14px;
+	color: #646464;
+	letter-spacing: 0.03em;
+	line-height: 28px;
+}
+
+.drop__link:hover {
+    color: #f16d7f;
+}
+
+.browse_drop {
+	position: absolute;
+	top: 36px;
+	z-index: 1;
 }
