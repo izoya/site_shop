@@ -116,6 +116,16 @@ input:-moz-placeholder
     position: absolute
     top: 36px !important
     z-index: 1
+    border: none !important
+    &::after
+      content: ''
+      position: absolute
+      left: 67px
+      top: -25px
+      border-width: 15px 7px 15px
+      border-style: solid
+      border-color: transparent
+      border-bottom: 10px solid #fff
 
 .button
   height: 38px
@@ -326,6 +336,8 @@ input:-moz-placeholder
   &_align
     justify-content: flex-start !important
     margin-right: -35px
+    & .product
+      margin-right: 30px
 
 .cart_img
   height: 22px
@@ -912,7 +924,7 @@ a.number:hover
   align-items: center
   margin-top: 65px
 
+.cart-box
+  border: 1px solid black
 
-.pr_align
-  margin-right: 30px
 

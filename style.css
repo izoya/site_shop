@@ -133,6 +133,17 @@ input:-moz-placeholder {
   position: absolute;
   top: 36px !important;
   z-index: 1;
+  border: none !important;
+}
+.browse_drop::after {
+  content: "";
+  position: absolute;
+  left: 67px;
+  top: -25px;
+  border-width: 15px 7px 15px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: 10px solid #fff;
 }
 
 .button {
@@ -383,6 +394,9 @@ input:-moz-placeholder {
 .product_align {
   justify-content: flex-start !important;
   margin-right: -35px;
+}
+.product_align .product {
+  margin-right: 30px;
 }
 
 .cart_img {
@@ -1042,8 +1056,8 @@ a.number:hover {
   margin-top: 65px;
 }
 
-.pr_align {
-  margin-right: 30px;
+.cart-box {
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
