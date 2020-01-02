@@ -1,4 +1,5 @@
-$selectColor: #f16d7f
+@import "vars"
+@import "mixins"
 
 *
   margin: 0
@@ -7,10 +8,11 @@ $selectColor: #f16d7f
 
 body
   font-family: 'Lato', sans-serif
+  background-color: $bgColor
 
 a
   text-decoration: none
-
+  outline: none
 
 .center
   padding: 0 calc(50% - 570px)
@@ -19,7 +21,7 @@ a
 
 .header
   height: 100px
-  background-color: #ffffff
+  background-color: $bgColor
   border: 1px solid #ececec
   box-shadow: 0 0 10px 0 #000000
   display: flex
@@ -41,16 +43,14 @@ a
   &__input
     height: 38px
     width: 280px
-    background-color: #ffffff
+    background-color: $bgColor
     border: 1px solid #e6e6e6
     padding: 14px 16px
   &__search
-    display: flex
-    align-items: center
-    justify-content: center
+    +cc()
     height: 38px
     width: 36px
-    background-color: #ffffff
+    background-color: $bgColor
     border: solid #e6e6e6
     border-width: 1px 1px 1px 0
     border-radius: 0 3px 3px 0
@@ -100,8 +100,8 @@ input:-moz-placeholder
   &__point
     color: #838383
     margin-right: 9px
-    height: 6px
-    width: 9px
+    font-size: 14px
+    padding-bottom: 4px
   &__text
     font-size: 14px
     font-weight: 300
@@ -125,7 +125,7 @@ input:-moz-placeholder
       border-width: 15px 7px 15px
       border-style: solid
       border-color: transparent
-      border-bottom: 10px solid #fff
+      border-bottom: 10px solid $bgColor
 
 .button
   height: 38px
@@ -136,19 +136,20 @@ input:-moz-placeholder
   justify-content: flex-end
   &__text
     font-size: 15px
-    color: #ffffff
+    color: $bgColor
     letter-spacing: 0.03em
     line-height: 32px
   &__point
-    height: 6px
-    width: 9px
     margin-right: 12px
     margin-left: 9px
+    font-size: 14px
+    color: #ffffff
+    padding-bottom: 4px
 
 
 .nav
   height: 51px
-  background-color: #fff
+  background-color: $bgColor
 
 
 .menu
@@ -171,9 +172,115 @@ input:-moz-placeholder
   &__list
     position: relative
 
+.cart
+  position: relative
+  &:hover &__drop
+    display: flex
+  &__items
+    //overflow-y: scroll
+    width: 100%
+    //height: 240px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    flex-direction: column
+  &__total
+    width: 100%
+    display: flex
+    justify-content: space-between
+    font-size: 16px
+    font-weight: bold
+    color: #222
+    text-transform: uppercase
+    margin-top: 19px
+  &__checkout
+    +cc()
+    font-size: 14px
+    font-weight: bold
+    color: #f16d7f
+    text-transform: uppercase
+    height: 50px
+    width: 225px
+    background-color: $bgColor
+    border: 1px solid #f16d7f
+    margin-top: 32px
+    &:hover
+      color: $bgColor
+      background-color: $selectColor
+  &__gtc
+    +cc()
+    font-size: 14px
+    font-weight: bold
+    color: #4a4a4a
+    text-transform: uppercase
+    height: 50px
+    width: 100%
+    background-color: $bgColor
+    border: 1px solid #eaeaea
+    margin-top: 10px
+    &:hover
+      color: $bgColor
+      background-color: #b2b2b2
+  &__drop
+    position: absolute
+    left: -72px
+    padding: 20px
+    //height: 440px
+    width: 262px
+    background-color: $bgColor
+    border-radius: 5px
+    display: none
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+  &__item
+    display: flex
+    justify-content: flex-start
+    width: 100%
+    padding-bottom: 16px
+    margin-bottom: 16px
+    border-bottom: 1px solid rgba(237, 237, 237, 0.75)
+    &:hover
+      box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.1)
+    & i, a
+      font-size: 16px
+      color: #c0c0c0
+      align-self: center
+      padding: 0
+    & img
+      margin-right: 14px
+      max-height: 85px
+      max-width: 72px
+    &_desc
+      width: 115px
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      padding-right: 14px
+      & i
+        font-size: 12px
+        color: #e4af48
+        padding: 0
+      & p
+        font-size: 12px
+        color: $selectColor
+      & h3 a
+        font-size: 12px
+        font-weight: bold
+        color: $darkColor
+        text-align: left
+        text-transform: uppercase
+
+
+.stars
+  flex-basis: 56px
+  display: flex
+  justify-content: flex-start
+  flex-wrap: nowrap
+
 
 .drop
-  background-color: #ffffff
+  background-color: $bgColor
   border-radius: 5px
   padding-left: 20px
   padding-right: 20px
@@ -241,7 +348,7 @@ input:-moz-placeholder
 .offer
   margin-top: 98px
   height: 823px
-  background-color: #fff
+  background-color: $bgColor
   display: flex
   flex-wrap: wrap
   flex-direction: column
@@ -257,7 +364,7 @@ input:-moz-placeholder
     background-repeat: no-repeat
     background-position: center
   &__content
-    background-color: #fff
+    background-color: $bgColor
     padding: 18px
   &__h5
     font-size: 18px
@@ -350,7 +457,7 @@ input:-moz-placeholder
   left: 70px
   height: 39px
   width: 123px
-  border: 1px solid #ffffff
+  border: 1px solid #fff
   display: none
   align-items: center
   justify-content: flex-start
@@ -360,7 +467,7 @@ input:-moz-placeholder
 .atc_text
   font-size: 13px
   font-weight: bold
-  color: #ffffff
+  color: #fff
   padding-left: 8px
 
 
@@ -377,7 +484,7 @@ input:-moz-placeholder
   &_button__text
     font-size: 16px
     font-weight: bold
-    color: #ffffff
+    color: $bgColor
     letter-spacing: 0.03em
     margin-left: 24px
     line-height: 14px
@@ -413,12 +520,12 @@ input:-moz-placeholder
   &_p1
     font-size: 54px
     font-weight: bold
-    color: #fff
+    color: $bgColor
     letter-spacing: 0.03em
   &_p2
     font-size: 30px
     font-weight: bold
-    color: #ffffff
+    color: $bgColor
     letter-spacing: 0.03em
 
 .desc__item
@@ -488,9 +595,10 @@ input:-moz-placeholder
     position: absolute
     left: 282px
     font-size: 14px
-    color: #ffffff
+    color: $bgColor
     text-align: center
     letter-spacing: 0.03em
+    cursor: pointer
   &__form
     display: flex
     position: relative
@@ -621,12 +729,11 @@ input:-moz-placeholder
   &__item
     height: 32px
     width: 32px
-    background-color: #fff
+    background-color: $bgColor
     margin-left: 8px
     vertical-align: middle
-    display: flex
-    justify-content: center
-    align-items: center
+    cursor: pointer
+    +cc()
     &:hover
       background-color: $selectColor
       & img
@@ -786,7 +893,7 @@ details[open] > summary
       left: 0
       height: 13px
       width: 13px
-      background-color: #ffffff
+      background-color: $bgColor
       border: 1px solid #ebebeb
       transition: .2s
     &:after
@@ -830,7 +937,7 @@ details[open] > summary
   flex-wrap: wrap
   padding: 10px
   &_item
-    background-color: #fff
+    background-color: $bgColor
     padding-left: 13px
     margin-right: 10px
     height: 30px
@@ -875,7 +982,7 @@ a.number:hover
 .viewall
   height: 44px
   width: 150px
-  background-color: #ffffff
+  background-color: $bgColor
   border: 1px solid #ef5b70
   border-radius: 3px
   font-size: 16px
@@ -883,12 +990,12 @@ a.number:hover
   color: #ef5b70
   &:hover
     background-color: #ef5b70
-    color: #fff
+    color: $bgColor
     cursor: pointer
 
 
 .pages
-  background-color: #ffffff
+  background-color: $bgColor
   border: 1px solid #ebebeb
   border-radius: 3px
   height: 44px
@@ -924,7 +1031,6 @@ a.number:hover
   align-items: center
   margin-top: 65px
 
-.cart-box
-  border: 1px solid black
+
 
 
