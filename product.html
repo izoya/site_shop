@@ -16,8 +16,9 @@
 			<a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="logo__color">D</span></a>
 			<form class="header__form" action="#">
 				<div class="browse">
-					<a href="#"class="browse__text">Browse</a>
-					<img class="browse__point" src="img/point_down.png">
+					<a href="#" class="browse__text">Browse</a>
+					<i class="fas fa-sort-down browse__point"></i>
+					<!-- Выпадающее меню -->
 					<div class="drop browse_drop">
 						<div class="drop__chapter">
 							<h3 class="drop__h3">Women</h3>
@@ -32,17 +33,18 @@
 								<li><a href="#" class="drop__link">Accessories</a></li>
 							</ul>
 							<h3 class="drop__h3">Men</h3>
-							<ul class="drop__ul">    Jackets/vests
+							<ul class="drop__ul">
+								<li><a href="#" class="drop__link">Jackets/vests</a></li>
 								<li><a href="#" class="drop__link">Tees/Tank tops</a></li>
 								<li><a href="#" class="drop__link">Shirts/Polos</a></li>
 								<li><a href="#" class="drop__link">Sweaters</a></li>
 								<li><a href="#" class="drop__link">Sweatshirts/Hoodies</a></li>
 								<li><a href="#" class="drop__link">Blazers</a></li>
-								<li><a href="#" class="drop__link">Jackets/vests</a></li>		
+								<li><a href="#" class="drop__link">Jackets/vests</a></li>
 							</ul>
 						</div>
-				</div>
-			
+					</div>
+
 				</div>
 				<input class="header__input" type="text" placeholder="Search for Item...">
 				<button class="header__search"><img src="img/search.png" alt="search"></button>
@@ -52,11 +54,73 @@
 			<a href="#"><img class="header__cart" src="img/cart.png" alt="cart"></a>
 			<div class="cart">
 				<a href="#" class="button"><span class="button__text">My Account</span>
-					<img class="button__point" src="img/point_down_wh.png" alt="my account"></a>
-				<div class="drop drop_cart"> 111</div>
-			</div>
+					<!--img class="button__point" src="img/point_down_wh.png" alt="my account"-->
+					<i class="fas fa-sort-down button__point"></i></a>
 
+				<!-- Корзина -->
+				<div class="cart__drop">
+					<div class="cart__items">
+						<div class="cart__item">
+							<a href="#"><img src="img/cart2_s.png" alt="cart_item"></a>
+							<div class="cart__item_desc">
+								<h3><a href="#">Rebox Zane</a></h3>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star-half-alt"></i>
+									<i class="far fa-star"></i>
+								</div>
+								<p>1 x $250</p>
+							</div>
+							<a href="#"><i class="fas fa-times-circle"></i></a>
+
+						</div>
+						<div class="cart__item">
+							<a href="#"><img src="img/cart1_s.png" alt="cart_item"></a>
+							<div class="cart__item_desc">
+								<h3><a href="#">Rebox Zane</a></h3>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star-half-alt"></i>
+									<i class="far fa-star"></i>
+								</div>
+								<p>1 x $250</p>
+							</div>
+							<a href="#"><i class="fas fa-times-circle"></i></a>
+
+						</div>
+						<div class="cart__item">
+							<a href="#"><img src="img/cart1_s.png" alt="cart_item"></a>
+							<div class="cart__item_desc">
+								<h3><a href="#">Rebox Zane</a></h3>
+								<div class="stars">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star-half-alt"></i>
+									<i class="far fa-star"></i>
+								</div>
+								<p>1 x $250</p>
+							</div>
+							<a href="#"><i class="fas fa-times-circle"></i></a>
+
+						</div>
+
+					</div>
+					<div class="cart__total">
+						<div>TOTAL</div>
+						<div>$500.00</div>
+					</div>
+					<a href="#" class="cart__checkout">Checkout</a>
+					<a href="#" class="cart__gtc">Go to cart</a>
+				</div>
+
+			</div>
 		</div>
+
 	</header>
 	<nav class="nav center">
 		<ul class="menu">
@@ -99,21 +163,21 @@
 			<li class="menu__list"><a href="#" class="menu__link">Featured </a></li>
 			<li class="menu__list"><a href="#" class="menu__link">Hot Deals</a>
 				<div class="drop drop_last">
-                  	<div class="drop__chapter">
-                    	<h3 class="drop__h3">Accessori</h3>
-                        <ul class="drop__ul">
-                            <li><a href="#" class="drop__link">Dresses </a></li>
-                            <li><a href="#" class="drop__link">Tops </a></li>
-                            <li><a href="#" class="drop__link">Sweaters/Knits </a></li>
-                        </ul>
-                        <h3 class="drop__h3">Accessori</h3>
-                        <ul class="drop__ul">
-                            <li><a href="#" class="drop__link">Dresses </a></li>
-                            <li><a href="#" class="drop__link">Tops </a></li>
-                            <li><a href="#" class="drop__link">Sweaters/Knits </a></li>
-                        </ul>
-                    </div>
-                </div>
+					<div class="drop__chapter">
+						<h3 class="drop__h3">Accessori</h3>
+						<ul class="drop__ul">
+							<li><a href="#" class="drop__link">Dresses </a></li>
+							<li><a href="#" class="drop__link">Tops </a></li>
+							<li><a href="#" class="drop__link">Sweaters/Knits </a></li>
+						</ul>
+						<h3 class="drop__h3">Accessori</h3>
+						<ul class="drop__ul">
+							<li><a href="#" class="drop__link">Dresses </a></li>
+							<li><a href="#" class="drop__link">Tops </a></li>
+							<li><a href="#" class="drop__link">Sweaters/Knits </a></li>
+						</ul>
+					</div>
+				</div>
 			</li>
 		</ul>
 	</nav>
@@ -200,13 +264,29 @@
 				<div class="sort_item">
 					<div class="sort_label">Sort By</div>
 					<div class="sort_box">Name
-						<img class="sort__point" src="img/point_down.png">
+						<i class="fas fa-sort-down sort__point"></i>
+						<div class="sort_drop">
+							<ul class="sort_ul">
+								<li class="sort_list">Default</li>
+								<li class="sort_list">Name</li>
+								<li class="sort_list">Price (asc)</li>
+								<li class="sort_list">Price (desc)</li>
+								<li class="sort_list">Rating</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="sort_item">
 					<div class="sort_label">Show</div>
 					<div class="sort_box">09
-						<img class="sort__point" src="img/point_down.png">
+						<i class="fas fa-sort-down sort__point"></i>
+						<div class="sort_drop">
+							<ul class="sort_ul">
+								<li class="sort_list">10</li>
+								<li class="sort_list">30</li>
+								<li class="sort_list">50</li>
+							</ul>
+						</div>
 					</div>
 				</div>				
 			</div>
@@ -449,19 +529,19 @@
 		<div class="copyright-text">© 2017 Brand All Rights Reserved.</div>
 		<div class="social">
 			<div class="social__item">
-				<div><img src="img/social/facebook.png" alt="Facebook"></div>
+				<a href="http://facebook.com" target="_blank" title="Facebook"><img src="img/social/facebook.png" alt="Facebook"></a>
 			</div>
 			<div class="social__item">
-				<div><img src="img/social/bird.png" alt=""></div>
+				<a href="http://twitter.com" target="_blank" title="Twitter"><img src="img/social/bird.png" alt="Twitter"></a>
 			</div>
 			<div class="social__item">
-				<a href="#"><img src="img/social/in.png" alt="In"></a>
+				<a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><img src="img/social/in.png" alt="LinkedIn"></a>
 			</div>
 			<div class="social__item">
-				<div><img src="img/social/pint.png" alt="Pinterest"></div>
+				<a href="https://pinterest.com/" target="_blank" title="Pinterest"><img src="img/social/pint.png" alt="Pinterest"></a>
 			</div>
 			<div class="social__item">
-				<div><img src="img/social/g.png" alt="Google+"></div>
+				<a href="https://plus.google.com/" target="_blank" title="Google+"><img src="img/social/g.png" alt="Google+"></a>
 			</div>
 		</div>
 	</footer>

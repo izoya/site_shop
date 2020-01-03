@@ -1,5 +1,6 @@
 @import "vars"
 @import "mixins"
+@import "singlepage"
 
 *
   margin: 0
@@ -197,12 +198,12 @@ input:-moz-placeholder
     +cc()
     font-size: 14px
     font-weight: bold
-    color: #f16d7f
+    color: $selectColor
     text-transform: uppercase
     height: 50px
     width: 225px
     background-color: $bgColor
-    border: 1px solid #f16d7f
+    border: 1px solid $selectColor
     margin-top: 32px
     &:hover
       color: $bgColor
@@ -755,11 +756,13 @@ input:-moz-placeholder
   padding-top: 65px
   padding-bottom: 65px
   background-color: #f8f3f4
+  color: #636363
   &__line
     font-size: 14px
     font-weight: 300
-    color: #636363
     text-transform: uppercase
+    &:hover
+      border-bottom: 1px solid #636363
   &__activ
     font-weight: bold
     color: $selectColor
@@ -809,15 +812,18 @@ summary::-webkit-details-marker
 
 
 summary::after
-  content: '\25B6'
+  content: '\f0dd'
   padding-right: 6px
   color: #6f6e6e
-  font-size: 10px
+  font-size: 14px
+  font-family: 'FontAwesome'
 
 
 details[open] > summary::after
-  content: '\25BC'
+  content: '\f0de'
   color: #ef5b70
+  font-size: 14px
+  font-family: 'FontAwesome'
 
 
 details[open] > summary
@@ -947,17 +953,49 @@ details[open] > summary
     align-items: center
     border: 1px solid #ebebeb
   &_box
+    height: 100%
     padding-left: 11px
+    display: flex
+    align-items: center
     border-left: 1px solid #ebebeb
+    position: relative
     &:hover
       cursor: pointer
-      color: $selectColor
+  &_box:hover &_drop
+    display: flex
   &_label
+    height: 100%
+    display: flex
+    align-items: center
     padding-right: 8px
     border-right: 1px solid #ebebeb
   &__point
     padding-left: 21px
     padding-right: 9px
+    padding-bottom: 4px
+  &_drop
+    position: absolute
+    top: 28px
+    right: -1px
+    background-color: $bgColor
+    border: 1px solid #eaeaea
+    display: none
+    padding: 10px
+    z-index: 2
+    min-width: 100px
+    //border-radius: 3px
+  &_ul
+    list-style-type: none
+  &_list
+    font-size: 14px
+    color: #646460
+    letter-spacing: 0.03em
+    line-height: 28px
+    &:hover
+      color: $selectColor
+
+
+
 
 
 .paging
