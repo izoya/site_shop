@@ -175,6 +175,7 @@ input:-moz-placeholder
 
 .cart
   position: relative
+  z-index: 1
   &:hover &__drop
     display: flex
   &__items
@@ -432,13 +433,15 @@ input:-moz-placeholder
     color: $selectColor
     text-transform: uppercase
     margin-top: 17px
-    margin-left: 14px
   &__content
     padding: 19px 15px
   &:hover
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
     & .product__img
       filter: brightness(50%)
+    & .alsolike_img
+      filter: brightness(50%)
+
     & .add_to_cart
       display: flex
   &_align
@@ -465,11 +468,14 @@ input:-moz-placeholder
   &:hover
     box-shadow: 0 0 5px #fff
 
+
+
 .atc_text
   font-size: 13px
   font-weight: bold
   color: #fff
   padding-left: 8px
+
 
 
 .action
