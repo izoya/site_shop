@@ -258,6 +258,213 @@
   border: 1px solid #eaeaea;
 }
 
+.table {
+  position: relative;
+  margin-top: 65px;
+  margin-bottom: 80px;
+}
+.table_row {
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  padding-bottom: 25px;
+}
+.table_caption {
+  line-height: 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+.table_left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 42%;
+}
+.table_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.table_right span {
+  position: relative;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 100px;
+}
+.table_img {
+  padding-right: 20px;
+  max-height: 115px;
+  max-width: 100px;
+}
+.table_spec, .table_spec input {
+  font-size: 13px;
+  color: #656565;
+}
+.table_spec i {
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.table_spec input {
+  position: relative;
+  left: 15px;
+  margin-left: -30px;
+  height: 30px;
+  width: 54px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  text-align: center;
+}
+.table_desc {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.table_desc h3, .table_desc a {
+  padding-top: 9px;
+  font-size: 13px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.table_product_specs {
+  font-size: 13px;
+  font-weight: 300;
+  color: #6f6e6e;
+}
+.table_product_specs b {
+  color: #575757;
+  font-weight: normal;
+}
+.table_buttons {
+  padding-top: 20px;
+  border-bottom: none !important;
+}
+.table_buttons button {
+  cursor: pointer;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  padding: 19px 39px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+.table_buttons button:hover {
+  background-color: #eaeaea;
+}
+.table_service {
+  margin-top: 38px;
+  margin-bottom: -45px !important;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: none !important;
+}
+.table_service h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+.table_total {
+  text-align: right;
+  height: 214px;
+  width: 360px;
+  background-color: #f5f3f3;
+  padding: 40px 43px;
+}
+.table_total p {
+  font-size: 11px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+  display: block;
+}
+.table_total span {
+  padding-left: 20px;
+}
+.table_total button {
+  height: 50px;
+  width: 100%;
+  background-color: #f16d7f;
+  margin-top: 17px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.table_total button:hover {
+  background-color: #656565;
+  border: 1px solid #e2e2e2;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #e2e2e2;
+}
+
+.service_div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 35px;
+}
+.service_div button {
+  height: 35px;
+  background-color: #fff;
+  padding: 12px 15px;
+  border: 1px solid #eaeaea;
+  font-size: 11px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.service_div button:hover {
+  background-color: #eaeaea;
+}
+.service_div p {
+  display: block;
+  padding-bottom: 24px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+  text-align: left;
+}
+
+.service_input, .country {
+  height: 45px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #b1b1b1;
+}
+
+.country {
+  display: block;
+  position: relative;
+}
+
 * {
   margin: 0;
   padding: 0;
