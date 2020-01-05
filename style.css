@@ -448,7 +448,7 @@
   text-align: left;
 }
 
-.service_input, .country {
+.service_input, .login_field, .country {
   height: 45px;
   width: 100%;
   background-color: #fff;
@@ -463,6 +463,128 @@
 .country {
   display: block;
   position: relative;
+}
+
+.checkout {
+  padding-bottom: 30px !important;
+}
+.checkout:first-of-type {
+  margin-top: 96px;
+}
+.checkout:last-of-type {
+  margin-bottom: 89px;
+}
+.checkout_caption {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  text-align: left;
+  text-transform: uppercase;
+}
+.checkout_section {
+  display: flex;
+  padding-top: 6px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.checkout_block {
+  padding-left: 35px;
+  width: 50%;
+  padding-bottom: 44px;
+}
+.checkout_block h3 {
+  font-size: 13px;
+  color: #222222;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  padding-top: 30px;
+}
+.checkout_block p {
+  font-size: 13px;
+  color: #b3b2b2;
+  padding-bottom: 23px;
+  display: block;
+  line-height: 24px;
+}
+.checkout_block label {
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.checkout_block button {
+  padding: 19px 54px;
+  cursor: pointer;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+.checkout_block button:hover {
+  background-color: #eaeaea;
+}
+.checkout_input {
+  position: relative;
+  display: block;
+  padding: 0 0 0 27px;
+  cursor: pointer;
+}
+.checkout_input:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #555555;
+  box-sizing: border-box;
+  border-radius: 14px;
+  background: #fff;
+}
+.checkout_input:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #222;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.radio input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.radio input:checked + .checkout_input:after {
+  opacity: 1;
+  outline: none;
+}
+
+.required_field {
+  color: #ff0d0d !important;
+}
+
+.login_field {
+  margin-top: 10px;
+}
+
+.checkout_block_height {
+  height: 340px;
+}
+
+.forgot_pass a {
+  font-size: 14px;
+  color: #222222;
+  padding-left: 11px;
 }
 
 * {
