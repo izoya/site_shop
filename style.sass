@@ -14,11 +14,18 @@ body
 a
   text-decoration: none
   outline: none
+  transition: all 1s
+  &:visited
+    color: #4a4a4a
 
 .center
   padding: 0 calc(50% - 570px)
+
 .color
   color: $selectColor !important
+
+.transition
+  transition: all 3.3s
 
 .header
   height: 100px
@@ -28,25 +35,31 @@ a
   display: flex
   justify-content: space-between
   align-items: center
+
   &__left
     display: flex
     align-items: center
+
   &__right
     display: flex
     align-items: flex-end
+
   &__form
     display: flex
     align-items: center
+
   &__cart
     margin-right: 26px
     height: 29px
     width: 32px
+
   &__input
     height: 38px
     width: 280px
     background-color: $bgColor
     border: 1px solid #e6e6e6
     padding: 14px 16px
+
   &__search
     +cc()
     height: 38px
@@ -81,9 +94,11 @@ input:-moz-placeholder
   letter-spacing: 0.03em
   line-height: 32px
   text-transform: uppercase
+
   &__color
     font-weight: 900
     color: $selectColor
+
   &__img
     margin-right: 13px
 
@@ -98,11 +113,13 @@ input:-moz-placeholder
   border-radius: 3px 0 0 3px
   background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
   position: relative
+
   &__point
     color: #838383
     margin-right: 9px
     font-size: 14px
     padding-bottom: 4px
+
   &__text
     font-size: 14px
     font-weight: 300
@@ -111,13 +128,16 @@ input:-moz-placeholder
     line-height: 32px
     margin-left: 15px
     margin-right: 8px
+
   &:hover .drop
     display: flex
+
   &_drop
     position: absolute
     top: 36px !important
     z-index: 1
     border: none !important
+
     &::after
       content: ''
       position: absolute
@@ -135,11 +155,13 @@ input:-moz-placeholder
   display: flex
   align-items: center
   justify-content: flex-end
+
   &__text
     font-size: 15px
     color: $bgColor
     letter-spacing: 0.03em
     line-height: 32px
+
   &__point
     margin-right: 12px
     margin-left: 9px
@@ -158,6 +180,7 @@ input:-moz-placeholder
   display: flex
   justify-content: center
   height: 51px
+
   &__link
     font-size: 14px
     font-weight: bold
@@ -166,18 +189,23 @@ input:-moz-placeholder
     text-transform: uppercase
     display: block
     padding: 20px
+
   &__list:hover
     border-bottom: 3px solid $selectColor
+
     & .drop
       display: flex
+
   &__list
     position: relative
 
 .cart
   position: relative
   z-index: 1
+
   &:hover &__drop
     display: flex
+
   &__items
     //overflow-y: scroll
     width: 100%
@@ -186,6 +214,7 @@ input:-moz-placeholder
     align-items: center
     justify-content: flex-start
     flex-direction: column
+
   &__total
     width: 100%
     display: flex
@@ -195,6 +224,7 @@ input:-moz-placeholder
     color: #222
     text-transform: uppercase
     margin-top: 19px
+
   &__checkout
     +cc()
     font-size: 14px
@@ -206,9 +236,11 @@ input:-moz-placeholder
     background-color: $bgColor
     border: 1px solid $selectColor
     margin-top: 32px
+
     &:hover
       color: $bgColor
       background-color: $selectColor
+
   &__gtc
     +cc()
     font-size: 14px
@@ -220,9 +252,11 @@ input:-moz-placeholder
     background-color: $bgColor
     border: 1px solid #eaeaea
     margin-top: 10px
+
     &:hover
       color: $bgColor
       background-color: #b2b2b2
+
   &__drop
     position: absolute
     left: -72px
@@ -235,6 +269,7 @@ input:-moz-placeholder
     flex-direction: column
     align-items: center
     justify-content: space-between
+
   &__item
     display: flex
     justify-content: flex-start
@@ -242,30 +277,37 @@ input:-moz-placeholder
     padding-bottom: 16px
     margin-bottom: 16px
     border-bottom: 1px solid rgba(237, 237, 237, 0.75)
+
     &:hover
       box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.1)
+
     & i, a
       font-size: 16px
       color: #c0c0c0
       align-self: center
       padding: 0
+
     & img
       margin-right: 14px
       max-height: 85px
       max-width: 72px
+
     &_desc
       width: 115px
       display: flex
       flex-direction: column
       justify-content: flex-start
       padding-right: 14px
+
       & i
         font-size: 12px
         color: #e4af48
         padding: 0
+
       & p
         font-size: 12px
         color: $selectColor
+
       & h3 a
         font-size: 12px
         font-weight: bold
@@ -291,11 +333,16 @@ input:-moz-placeholder
   position: absolute
   top: 51px
   border: 1px solid #e8e8e8
+  //transition: display 2s
+  z-index: 100
+
   &__chapter
     width: 234px
     margin-right: 46px
+
     &:last-of-type
       margin-right: 0
+
   &__h3
     font-size: 14px
     color: #232323
@@ -304,16 +351,18 @@ input:-moz-placeholder
     border-bottom: 1px solid #e8e8e8
     padding-bottom: 8px
     margin-top: 21px
+
   &__ul
     list-style-type: none
+
   &__link
     font-size: 14px
     color: #646464
     letter-spacing: 0.03em
     line-height: 28px
+
     &:hover
       color: $selectColor
-
 
 
 .promo
@@ -324,6 +373,7 @@ input:-moz-placeholder
   background-position: center -51px
   display: flex
   align-items: center
+
   &__h2
     font-size: 60px
     font-weight: 900
@@ -331,17 +381,20 @@ input:-moz-placeholder
     letter-spacing: 0.03em
     line-height: 45px
     margin-bottom: 15px
+
   &__h3
     font-size: 40px
     font-weight: 900
     color: #222222
     letter-spacing: 0.03em
     line-height: 33px
+
   &__color
     font-size: 40px
     font-weight: 900
     color: $selectColor
     letter-spacing: 0.03em
+
   &__content
     border-left: 12px solid $selectColor
     padding-left: 12px
@@ -356,6 +409,7 @@ input:-moz-placeholder
   flex-direction: column
   justify-content: space-between
   align-content: space-between
+
   &__block
     width: 560px
     border: 0
@@ -365,37 +419,47 @@ input:-moz-placeholder
     padding-top: 26px
     background-repeat: no-repeat
     background-position: center
+
   &__content
     background-color: $bgColor
     padding: 18px
+
   &__h5
     font-size: 18px
     font-weight: 900
     color: #222222
     letter-spacing: 0.03em
     text-transform: uppercase
+
   &__h4
     font-size: 30px
     font-weight: 900
     color: $selectColor
     letter-spacing: 0.03em
     text-transform: uppercase
+
   &1_img
     background-image: url(img/offer1.png)
+
   &2_img
     background-image: url(img/offer2.png)
+
   &3_img
     background-image: url(img/offer3.png)
+
   &4_img
     background-image: url(img/offer4.png)
+
 .square
   height: 542px
+
 .rectangle
   height: 261px
 
 .title
   padding-top: 100px
   padding-bottom: 52px
+
   &__h4
     font-size: 30px
     font-weight: bold
@@ -415,38 +479,47 @@ input:-moz-placeholder
   width: 261px
   position: relative
   margin-bottom: 20px
+  transition: all $transition
+
   &-box
     display: flex
     flex-wrap: wrap
     justify-content: space-between
     align-content: flex-start
+
   &__img
     width: 100%
+    transition: all .4s
+
   &__title
     font-size: 14px
     color: #222
     text-transform: uppercase
     font-weight: bold
+
   &__price
     font-size: 16px
     font-weight: bold
     color: $selectColor
     text-transform: uppercase
     margin-top: 17px
+
   &__content
     padding: 19px 15px
+
   &:hover
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
     & .product__img
       filter: brightness(50%)
     & .alsolike_img
       filter: brightness(50%)
-
     & .add_to_cart
-      display: flex
+      opacity: 1
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+    transform: scale(1.03)
   &_align
     justify-content: flex-start !important
     margin-right: -35px
+
     & .product
       margin-right: 30px
 
@@ -455,6 +528,7 @@ input:-moz-placeholder
   width: 23px
   margin-left: 12px
 
+
 .add_to_cart
   position: absolute
   top: 97px
@@ -462,12 +536,13 @@ input:-moz-placeholder
   height: 39px
   width: 123px
   border: 1px solid #fff
-  display: none
+  display: flex
   align-items: center
   justify-content: flex-start
+  opacity: 0
+  transition: all $transition
   &:hover
     box-shadow: 0 0 5px #fff
-
 
 
 .atc_text
@@ -477,17 +552,18 @@ input:-moz-placeholder
   padding-left: 8px
 
 
-
 .action
   margin-top: 79px
   margin-bottom: 113px
   display: flex
   justify-content: center
+
   &__button
     height: 48px
     background-color: $selectColor
     display: flex
     align-items: center
+
   &_button__text
     font-size: 16px
     font-weight: bold
@@ -495,6 +571,7 @@ input:-moz-placeholder
     letter-spacing: 0.03em
     margin-left: 24px
     line-height: 14px
+
   &_button__point
     height: 7px
     width: 15px
@@ -507,6 +584,7 @@ input:-moz-placeholder
   display: flex
   justify-content: center
   height: 529px
+
   &__desc
     display: flex
     flex-wrap: wrap
@@ -516,19 +594,23 @@ input:-moz-placeholder
     background-color: #222224
     height: 100%
     padding: 45px 31px
+
   &__img
     position: relative
+
   &_title
     position: absolute
     top: 146px
     left: 39px
     display: flex
     flex-direction: column
+
   &_p1
     font-size: 54px
     font-weight: bold
     color: $bgColor
     letter-spacing: 0.03em
+
   &_p2
     font-size: 30px
     font-weight: bold
@@ -574,18 +656,21 @@ input:-moz-placeholder
   display: flex
   justify-content: center
   margin-bottom: 109px
+
   &_left
     padding-top: 111px
     display: flex
     justify-content: flex-end
     padding-right: 0
     width: 569px
+
   &_right
     padding-left: 92px
     display: flex
     flex-direction: column
     justify-content: center
     width: 478px
+
   &__input
     height: 46px
     width: 334px
@@ -593,6 +678,7 @@ input:-moz-placeholder
     border-radius: 23px
     border-style: none
     padding: 18px 78px 18px 28px
+
   &__button
     height: 46px
     width: 104px
@@ -606,6 +692,7 @@ input:-moz-placeholder
     text-align: center
     letter-spacing: 0.03em
     cursor: pointer
+
   &__form
     display: flex
     position: relative
@@ -613,11 +700,13 @@ input:-moz-placeholder
 .feedback
   padding-top: 12px
   margin-right: 33px
+
   &__img
     height: 83px
     width: 83px
     border-radius: 83px
     margin-right: 28px
+
   &-author
     padding-top: 10px
     font-size: 16px
@@ -625,6 +714,7 @@ input:-moz-placeholder
     text-align: left
     letter-spacing: 0.03em
     line-height: 26px
+
     &-add
       font-size: 12px
       font-weight: 300
@@ -632,13 +722,15 @@ input:-moz-placeholder
       text-align: left
       letter-spacing: 0.03em
       line-height: 14px
+
   &-text
     font-size: 16px
     font-style: italic
-    color: #222224
+    color: $darkColor
     text-align: left
     letter-spacing: 0.03em
     line-height: 26px
+
   &-switch
     display: block
     height: 4px
@@ -646,6 +738,7 @@ input:-moz-placeholder
     background-color: #d6d6d6
     margin-top: 41px
     margin-right: 13px
+
     &:hover
       background-color: $selectColor
 
@@ -654,6 +747,7 @@ input:-moz-placeholder
 
 .cta
   padding: 0 0 35px
+
   &__2
     font-size: 14px
     color: #222224
@@ -661,6 +755,7 @@ input:-moz-placeholder
     letter-spacing: 0.03em
     line-height: 24px
     text-transform: uppercase
+
   &__1
     font-size: 24px
     color: #222224
@@ -674,12 +769,15 @@ input:-moz-placeholder
   justify-content: flex-start
   display: flex
   margin-bottom: 84px
+
   &_left
     width: 430px
     margin-right: 60px
+
   &_right
     display: flex
     justify-content: space-between
+
   &__text
     padding-top: 29px
     font-size: 14px
@@ -688,20 +786,24 @@ input:-moz-placeholder
     text-align: left
     letter-spacing: 0.03em
     line-height: 24px
+
   &_p
     padding-bottom: 20px
     display: block
+
   &-menu
     display: flex
     flex-direction: column
     align-items: flex-start
     margin-right: 80px
+
     &__caption
       font-size: 18px
       font-weight: bold
       text-align: right
       letter-spacing: 0.03em
       text-transform: uppercase
+
     &__items
       margin-top: 45px
       margin-bottom: 13px
@@ -709,11 +811,13 @@ input:-moz-placeholder
       flex-direction: column
       justify-content: space-between
       height: 179px
+
       & a
         font-size: 16px
         color: #898989
         text-align: left
         letter-spacing: 0.03em
+
         &:hover
           color: $selectColor
 
@@ -723,6 +827,7 @@ input:-moz-placeholder
   align-items: center
   height: 79px
   background-color: #e6e6e6
+
   &-text
     font-size: 16px
     color: #7a7a7a
@@ -731,8 +836,10 @@ input:-moz-placeholder
 .social
   display: flex
   justify-content: flex-end
+
   &-img
     align-self: center
+
   &__item
     height: 32px
     width: 32px
@@ -741,8 +848,10 @@ input:-moz-placeholder
     vertical-align: middle
     cursor: pointer
     +cc()
+
     &:hover
       background-color: $selectColor
+
       & img
         filter: brightness(2)
 
@@ -763,12 +872,15 @@ input:-moz-placeholder
   padding-bottom: 65px
   background-color: #f8f3f4
   color: #636363
+
   &__line
     font-size: 14px
     font-weight: 300
     text-transform: uppercase
+
     &:hover
       border-bottom: 1px solid #636363
+
   &__activ
     font-weight: bold
     color: $selectColor
@@ -781,6 +893,7 @@ input:-moz-placeholder
   display: flex
   justify-content: space-between
   align-items: flex-start
+
   &__right
     display: flex
     flex-direction: column
@@ -891,13 +1004,16 @@ details[open] > summary
   z-index: -1
   opacity: 0
   margin: 10px 0 0 20px
+
   & + label
     position: relative
     padding-left: 25px
     padding-right: 23px
     cursor: pointer
+
     &:hover
       color: $selectColor
+
     &:before
       content: ''
       position: absolute
@@ -908,14 +1024,17 @@ details[open] > summary
       background-color: $bgColor
       border: 1px solid #ebebeb
       transition: .2s
+
     &:after
       content: ''
       position: absolute
       top: 0
       left: 0
       transition: .2s
+
   &:checked + label:before
     background: #f0f0f0
+
   &:checked + label:after
     content: '\2713'
     font-weight: bold
@@ -948,6 +1067,7 @@ details[open] > summary
   align-items: center
   flex-wrap: wrap
   padding: 10px
+
   &_item
     background-color: $bgColor
     padding-left: 13px
@@ -958,6 +1078,7 @@ details[open] > summary
     display: flex
     align-items: center
     border: 1px solid #ebebeb
+
   &_box
     height: 100%
     padding-left: 11px
@@ -965,20 +1086,25 @@ details[open] > summary
     align-items: center
     border-left: 1px solid #ebebeb
     position: relative
+
     &:hover
       cursor: pointer
+
   &_box:hover &_drop
     display: flex
+
   &_label
     height: 100%
     display: flex
     align-items: center
     padding-right: 8px
     border-right: 1px solid #ebebeb
+
   &__point
     padding-left: 21px
     padding-right: 9px
     padding-bottom: 4px
+
   &_drop
     position: absolute
     top: 28px
@@ -988,20 +1114,25 @@ details[open] > summary
     display: none
     padding: 10px
     z-index: 2
-    min-width: 100px
-    //border-radius: 3px
+  //border-radius: 3px
   &_ul
     list-style-type: none
+    width: 100%
+
+  &_pages
+    width: 67px !important
+
+  &_by
+    min-width: 100px
+
   &_list
     font-size: 14px
     color: #646460
     letter-spacing: 0.03em
     line-height: 28px
+
     &:hover
       color: $selectColor
-
-
-
 
 
 .paging
@@ -1024,19 +1155,22 @@ a.number:hover
 
 
 .viewall
+  display: flex
+  align-items: center
+  justify-content: center
   height: 44px
   width: 150px
   background-color: $bgColor
   border: 1px solid #ef5b70
   border-radius: 3px
   font-size: 16px
-  font-weight: 300
+  font-weight: 400
   color: #ef5b70
+  transition: all .5s
+
   &:hover
     background-color: #ef5b70
     color: $bgColor
-    cursor: pointer
-
 
 .pages
   background-color: $bgColor
@@ -1064,6 +1198,7 @@ a.number:hover
   flex-direction: column
   align-items: center
   max-width: 333px
+
   & img
     max-height: 40px
     max-width: 47px
@@ -1074,6 +1209,7 @@ a.number:hover
   flex-direction: column
   align-items: center
   margin-top: 65px
+
 
 
 

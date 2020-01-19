@@ -231,6 +231,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
 .alsolike_title {
   font-size: 14px;
@@ -601,6 +602,10 @@ body {
 a {
   text-decoration: none;
   outline: none;
+  transition: all 1s;
+}
+a:visited {
+  color: #4a4a4a;
 }
 
 .center {
@@ -609,6 +614,10 @@ a {
 
 .color {
   color: #f16d7f !important;
+}
+
+.transition {
+  transition: all 3.3s;
 }
 
 .header {
@@ -923,6 +932,7 @@ input:-moz-placeholder {
   position: absolute;
   top: 51px;
   border: 1px solid #e8e8e8;
+  z-index: 100;
 }
 .drop__chapter {
   width: 234px;
@@ -1071,6 +1081,7 @@ input:-moz-placeholder {
   width: 261px;
   position: relative;
   margin-bottom: 20px;
+  transition: all 0.3s;
 }
 .product-box {
   display: flex;
@@ -1080,6 +1091,7 @@ input:-moz-placeholder {
 }
 .product__img {
   width: 100%;
+  transition: all 0.4s;
 }
 .product__title {
   font-size: 14px;
@@ -1099,6 +1111,7 @@ input:-moz-placeholder {
 }
 .product:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+  transform: scale(1.03);
 }
 .product:hover .product__img {
   filter: brightness(50%);
@@ -1107,7 +1120,7 @@ input:-moz-placeholder {
   filter: brightness(50%);
 }
 .product:hover .add_to_cart {
-  display: flex;
+  opacity: 1;
 }
 .product_align {
   justify-content: flex-start !important;
@@ -1130,9 +1143,11 @@ input:-moz-placeholder {
   height: 39px;
   width: 123px;
   border: 1px solid #fff;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .add_to_cart:hover {
   box-shadow: 0 0 5px #fff;
@@ -1325,7 +1340,7 @@ input:-moz-placeholder {
 .feedback-text {
   font-size: 16px;
   font-style: italic;
-  color: #222224;
+  color: #222;
   text-align: left;
   letter-spacing: 0.03em;
   line-height: 26px;
@@ -1725,10 +1740,16 @@ details[open] > summary {
   display: none;
   padding: 10px;
   z-index: 2;
-  min-width: 100px;
 }
 .sort_ul {
   list-style-type: none;
+  width: 100%;
+}
+.sort_pages {
+  width: 67px !important;
+}
+.sort_by {
+  min-width: 100px;
 }
 .sort_list {
   font-size: 14px;
@@ -1760,19 +1781,22 @@ a.number:hover {
 }
 
 .viewall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 44px;
   width: 150px;
   background-color: #fff;
   border: 1px solid #ef5b70;
   border-radius: 3px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   color: #ef5b70;
+  transition: all 0.5s;
 }
 .viewall:hover {
   background-color: #ef5b70;
   color: #fff;
-  cursor: pointer;
 }
 
 .pages {
